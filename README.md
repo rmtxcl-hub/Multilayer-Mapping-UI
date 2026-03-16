@@ -1,4 +1,4 @@
-# Optical Mapping UI
+# Multilayer Mapping UI
 
 <p align="center">
   <img src="Images/Picture%201.png" width="49%">
