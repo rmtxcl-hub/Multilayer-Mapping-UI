@@ -1,8 +1,8 @@
 # Multilayer Mapping UI
 
 <p align="center">
-  <img src="Images/Picture%201.png" width="49%">
-  <img src="Images/Picture%202.png" width="49%">
+  <img src="https://raw.githubusercontent.com/rmtxcl-hub/Assets/main/Images/Picture%201.png" width="49%">
+  <img src="https://raw.githubusercontent.com/rmtxcl-hub/Assets/main/Images/Picture%202.png" width="49%">
 </p>
 
 A simple desktop UI for **multilayer thin-film optical mapping** using the **transfer matrix method (TMM)** and a local optical-constants database based on **refractiveindex.info** data.
