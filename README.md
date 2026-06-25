@@ -11,6 +11,9 @@ This tool is designed for quick and easy generation of **wavelength-angle maps**
 
 - **Reflectivity** `R`
 - **Emissivity** `E = 1 - R`
+- **Band-Angle-Averaged Emissivity**
+- **Polarization Contrast and Ellipsometry**
+- **E and B Field Intensity Maps**
 
 It is intended for practical exploration of:
 
@@ -19,6 +22,7 @@ It is intended for practical exploration of:
 - infrared emissivity
 - thermal-radiation-related optical design
 - planar metamaterial / coating prototyping
+- ellispometry applications
 
 ---
 
@@ -52,6 +56,9 @@ The goal is not to replace advanced simulation frameworks, but to make **thin-fi
 - Switches between:
   - **Reflectivity**
   - **Emissivity**
+  - **Band-Angle-Averaged Emissivity**
+  - **Polarization Contrast and Ellipsometry**
+  - **E and B Field Intensity Maps**
 - Optional overlays:
   - **Contour**
   - **Submask**
@@ -82,9 +89,6 @@ You can:
 - set layer thicknesses in **µm**
 - define wavelength range and sampling
 - define angle range and sampling
-- choose:
-  - **E** or **R**
-  - **s**, **p**, or **both**
 
 The program then computes a 2D map over wavelength and incidence angle.
 
@@ -145,8 +149,14 @@ Main files in this project:
 - `nkwrap.py`  
   Optical-constants lookup and interpolation wrapper.
 
+- `map_collection.py & map_collection2.py`  
+  Computes weighted emissivity & ellipsometry parameters
+
 - `map_mod.py`  
   Map-generation logic for reflectivity/emissivity.
+
+- `field_collection.py`  
+  Computes field-based parameters
 
 - `contour.py`  
   Contour-style overlay generation.
@@ -173,7 +183,7 @@ Main files in this project:
 
 2. Download the database file `data_f.sqlite` from the Google Drive link below:
 
-**https://drive.google.com/file/d/13pP8PzNkjb4EwtVwyAV_BmgWK-LTkl8E/view?usp=drive_link**
+**https://drive.google.com/file/d/1z62c9xKyybTc6KxUo_Ws5GOGtOYs5Mg8/view?usp=sharing**
 
 3. Place `data_f.sqlite` in the same folder as the main Python files.
 
@@ -213,7 +223,7 @@ This launches the GUI.
 
 ### Requirements
 
-- Python 3.10+
+- Python 3.10+ (3.12.x recommended)
 - `numpy`
 - `scipy`
 - `matplotlib`
