@@ -1,0 +1,11 @@
+{
+  "tol_im": 0.0,
+  "tol_re": 0.0,
+  "clip_im_delta": 60.0,
+  "cover_n": 1.0,
+  "cover_k": 0.0,
+  "save_aspect_w": 16.0,
+  "save_aspect_h": 9.0,
+  "map_cmap": "turbo",
+  "map_scale": "Normalized 0-1"
+}
