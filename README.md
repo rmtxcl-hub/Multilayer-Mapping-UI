@@ -195,12 +195,17 @@ Multilayer-Mapping-UI/
 ├─ TMM.py
 ├─ nkwrap.py
 ├─ map_mod.py
+├─ map_collection.py
+├─ map_collection2.py
+├─ field_collection.py
 ├─ contour.py
 ├─ submask.py
 ├─ simplepeak.py
 ├─ material_keys_tagged.txt
 ├─ data_f.sqlite
 ├─ requirements.txt
+├─ ui_settings.json
+├─ txt/
 └─ README.md
 ```
 
